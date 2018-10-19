@@ -33,13 +33,55 @@ Con el comando git init.
 
 # Parte 5
 
-## 1. Listar las carpetas que hay dentro de la imagen
+## Listar las carpetas que hay dentro de la imagen
 
 ejemplo: docker run -it --name Joan joan3/orbis-training-docker:0.2.0 ls -ls
 
-## 2. ¿Cuál es la diferencia entre docker ps y docker ps -a?
+## ¿Cuál es la diferencia entre docker ps y docker ps -a?
 
 docker ps: lista los contenedores activos
 
 docker ps -a: lista los contenedores activos e inactivos
+
+## 1. ¿Cuál es la diferencia entre una imagen y un contenedor?
+
+La imagen son un conjunto de archios que representa un aplicacion o conjuno de aplicaciones.
+
+El conteneder es el espacio de memoria sobre el cual se ejecuta la imagene.
+
+## 2. ¿Cómo listo las imágenes que hay en mi computadora?
+
+Se lista con el sgte comando: docker images
+
+## 3. ¿Cómo salgo de un contenedor de docker?
+
+Con el siguiente comenado: exit
+
+## 4. ¿Se elimina el contenedor al salir de ella?
+
+Si esta creado de modo interactivo si elimina el contenedor.
+
+## 5. ¿Cómo elimino un contenedor?
+
+con el sgte comando: docker rm IDCONTENEDOR
+
+## 6. ¿Para qué es necesario el flag `-i`, `-t`, `--rm`?
+
+-i: ejecuta el contenedor de modo interactivo.
+
+-t: actiua uso de la terminal tty.
+
+--rm: automaticamente eliminara el contenedor cuando se salga
+
+## 7. ¿Cómo verifico que el archivo creado se encuentra en la imagen?
+
+ejecutando la imagen de un contenedor y listarlo.
+
+docker run --name Mikhael -i angello/orbis-training-docker:0.2.0 ls /app
+
+## 8. ¿Cómo se comenta una linea de código en Dockerfile?
+
+Con el caracter #
+
+
 
