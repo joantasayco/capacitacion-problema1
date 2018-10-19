@@ -40,5 +40,6 @@ ejemplo: docker run -it --name Joan joan3/orbis-training-docker:0.2.0 ls -ls
 ## 2. ¿Cuál es la diferencia entre docker ps y docker ps -a?
 
 docker ps: lista los contenedores activos
+
 docker ps -a: lista los contenedores activos e inactivos
 
