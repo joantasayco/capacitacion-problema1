@@ -18,7 +18,7 @@ docker build -t joan3/orbis-training-docker:0.2.0 .
 
 docker push joan3/orbis-training-docker:0.2.0
 
-**#Preguntas**
+**#Preguntas - Parte 4**
 
 **1. ¿Qué importancia tiene los tags en un proyecto?**
 
@@ -48,8 +48,12 @@ VirtualBox: es un sistema operativo completo funcionando de manera aislada sobre
 
 **7. ¿Es necesario depender de una imagen de docker base al crear una imagen nueva?**
 
+No es necesario que sea una imagen base.
 
 **8. ¿Porqué debo anteponer el nombre de usuario en una imagen docker nueva?**
 
+Si no se antepone el nombre del usuario va intentar subir a la raiz de docker y no lo va permitir, solo administradores de docker pueden hacerlo, de esta manera se identifica que es el usuario que esta subiendo a su repositorio.
 
 **9. ¿Que pasa si creo una imagen sin especificar una versión o tag, con qué versión se crea?**
+
+Se crea el tag vacio.
