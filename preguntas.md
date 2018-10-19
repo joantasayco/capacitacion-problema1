@@ -29,4 +29,10 @@ Markdown es un lenguaje de marcado que facilita la aplicación de formato a un t
 
 **6. ¿Cómo inicializo y configuro un proyecto de git?**
 
-Con el comando git init
+Con el comando git init.
+
+# Parte 5
+
+## 1. Listar las carpetas que hay dentro de la imagen
+
+ejemplo: docker run -it --name Joan joan3/orbis-training-docker:0.2.0 ls -ls
